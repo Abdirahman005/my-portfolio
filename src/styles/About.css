@@ -1,0 +1,30 @@
+/* About Section Styles */
+.about {
+  padding: 2rem 1rem;
+  background-color: #fce4ec;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Heading Style */
+.about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+/* Paragraph/Text Style */
+.about p {
+  max-width: 800px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #555;
+  margin-bottom: 1.5rem;
+}
+
+/* Optional: Add some spacing between sections if needed */
+.about .section {
+  margin-bottom: 2rem;
+}
