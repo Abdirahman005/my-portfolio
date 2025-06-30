@@ -58,8 +58,7 @@ VS Code – Preferred code editor
 
 ## 📸 Live Demo
 
-Check out the live version here: [👉 Click to View Live Portfolio](https://your-vercel-link.vercel.app)  
-*(Replace the URL with your actual live deployment URL)*
+ [👉 Click to View Live Portfolio](my-portfolio-zeta-six-73.vercel.app)  
 
 ---
 ## 🧑‍💻 How to Use Locally
