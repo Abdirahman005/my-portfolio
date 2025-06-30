@@ -1,12 +1,77 @@
-# React + Vite
+# 💼 Abdirahman Muktar — Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal developer portfolio! This portfolio showcases my projects, technical skills, and career aspirations as an aspiring IT practitioner.
 
-Currently, two official plugins are available:
+## 🌟 Objective
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+I am a highly driven IT practitioner with skills in Networking and Software Development including HTML, CSS, JavaScript, React, Python, PostgreSQL, MySQL, Flask, and Node.js. I am seeking an **internship opportunity** in a forward-thinking IT organization where I can contribute to web design and software development efforts while gaining real-world experience.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+- 💻 **Fully Responsive Design**
+- 🎨 Custom built with **HTML, CSS, JavaScript, React**
+- 🧠 Skills section with icons and tech stacks
+- 📂 Dynamic Projects Gallery
+- 📧 Contact form with direct email integration
+- 🌐 Social Media Links (LinkedIn, GitHub, etc.)
+
+---
+
+## 🛠️ Tech Stack
+Frontend
+HTML5 – Structure and semantic layout
+
+CSS3 – Styling with animations and responsiveness
+
+JavaScript (ES6+) – Interactive functionality
+
+React.js – Component-based architecture for UI
+
+Vite – Fast build tool and dev server
+
+🎨 Styling
+Plain CSS – Clean and custom styling for each section
+
+Flexbox & Media Queries – Responsive design techniques
+
+🧠 Backend & Server-Side (for future/full-stack use)
+Python – General programming and scripting
+
+Flask – Lightweight backend framework for APIs
+
+Node.js – Server-side JavaScript runtime
+
+🗄️ Databases
+PostgreSQL – Relational database system
+
+MySQL – Widely-used relational database engine
+
+Tools & Platforms
+Git & GitHub – Version control and repository hosting
+
+Vercel – Deployment platform for frontend applications
+
+VS Code – Preferred code editor
+
+
+## 📸 Live Demo
+
+Check out the live version here: [👉 Click to View Live Portfolio](https://your-vercel-link.vercel.app)  
+*(Replace the URL with your actual live deployment URL)*
+
+---
+## 🧑‍💻 How to Use Locally
+
+1. **Clone the repository
+
+git clone https://github.com/your-username/your-portfolio.git
+cd your-portfolio
+
+Install dependencies
+npm install
+
+Run the development server
+npm run dev
+
