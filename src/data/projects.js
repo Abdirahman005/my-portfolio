@@ -6,7 +6,7 @@ const projects = [
   },
   {
     title: "School registration system",
-    image: "/school-registration.png",              
+    image: "/school.png",              
     link: "https://school-learning-and-registration-sy.vercel.app/",
   },
   {
