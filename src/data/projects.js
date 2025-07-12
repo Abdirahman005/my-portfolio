@@ -11,7 +11,7 @@ const projects = [
   },
   {
     title: "Hospital management system",
-    image: "/Hospital.png",                         
+    image: "/hospital.png",                         
     link: "https://hospital-management-system-alpha-jet.vercel.app/",
   },
 ];
