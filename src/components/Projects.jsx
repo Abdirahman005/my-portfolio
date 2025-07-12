@@ -1,6 +1,6 @@
-import React from "react";
-import "../styles/Projects.css";
-import projects from "../data/projects";
+import React from "react";                      // ✅ Correct
+import "../styles/Projects.css";                // ✅ Make sure file exists and is correctly named
+import projects from "../data/projects";        // ✅ Correct path if your file is at src/data/projects.js
 
 export default function Projects() {
   return (
@@ -19,7 +19,7 @@ export default function Projects() {
           >
             <div
               className="project-card"
-              style={{ backgroundImage: `url(${project.image})` }}
+              style={{ backgroundImage: `url(${project.image})` }}   // ✅ Dynamic image background
             >
               <div className="project-title">{project.title}</div>
             </div>
