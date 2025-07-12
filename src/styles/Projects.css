@@ -15,18 +15,19 @@
   padding-bottom: 0.5rem;
 }
 
-/* Updated grid layout for better responsiveness */
+/* Project list with vertical layout */
 .project-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 2rem;
-  justify-content: center;
-  align-items: stretch;
+  align-items: center;
   padding: 0 1rem;
 }
 
 /* Project Card */
 .project-card {
+  width: 100%;
+  max-width: 600px;
   height: 200px;
   background-size: cover;
   background-position: center;
@@ -64,12 +65,13 @@
     padding: 3rem 1rem;
   }
 
+  .project-card {
+    height: 180px;
+    max-width: 100%;
+  }
+
   .project-title {
     font-size: 1rem;
     padding: 0.6rem;
-  }
-
-  .project-card {
-    height: 180px;
   }
 }
