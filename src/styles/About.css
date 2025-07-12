@@ -1,30 +1,113 @@
 /* About Section Styles */
 .about {
-  padding: 2rem 1rem;
-  background-color: #fce4ec;
+  position: relative;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #e3f2fd, #fce4ec); /* Soft blue-pink gradient */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+}
+
+/* Glowing Lights from Left and Right */
+.about::before,
+.about::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  height: 200px;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, transparent 70%);
+  border-radius: 50%;
+  z-index: 0;
+  pointer-events: none;
+  transform: translateY(-50%);
+  opacity: 0.6;
+}
+
+.about::before {
+  left: -200px;
+  animation: glowLeft 6s linear infinite;
+}
+
+.about::after {
+  right: -200px;
+  animation: glowRight 6s linear infinite;
+}
+
+@keyframes glowLeft {
+  0% {
+    left: -200px;
+    opacity: 0.2;
+  }
+  50% {
+    left: 50%;
+    opacity: 0.6;
+  }
+  100% {
+    left: 100%;
+    opacity: 0.1;
+  }
+}
+
+@keyframes glowRight {
+  0% {
+    right: -200px;
+    opacity: 0.2;
+  }
+  50% {
+    right: 50%;
+    opacity: 0.6;
+  }
+  100% {
+    right: 100%;
+    opacity: 0.1;
+  }
+}
+
+/* Content above glow */
+.about > * {
+  position: relative;
+  z-index: 1;
 }
 
 /* Heading Style */
 .about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #333;
+  font-size: 2.8rem;
+  margin-bottom: 1.5rem;
+  color: #0d47a1;
+  font-weight: 700;
 }
 
 /* Paragraph/Text Style */
 .about p {
-  max-width: 800px;
-  font-size: 1rem;
-  line-height: 1.6;
-  color: #555;
-  margin-bottom: 1.5rem;
+  max-width: 900px;
+  font-size: 1.25rem;
+  line-height: 1.8;
+  color: #333333;
+  margin-bottom: 2rem;
 }
 
-/* Optional: Add some spacing between sections if needed */
+/* Optional spacing between inner sections */
 .about .section {
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about h2 {
+    font-size: 2.2rem;
+  }
+
+  .about p {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .about::before,
+  .about::after {
+    width: 150px;
+    height: 150px;
+  }
 }
