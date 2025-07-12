@@ -9,6 +9,11 @@ const projects = [
     image: "/school-registration.png",
     link: "https://school-learning-and-registration-sy.vercel.app/",
   },
+ {
+    title: "Hospital management system",
+    image: "/Hospital.png",
+    link: "https://hospital-management-system-alpha-jet.vercel.app/",
+  },
  
   
 ];
