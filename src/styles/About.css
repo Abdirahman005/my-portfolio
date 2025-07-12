@@ -10,63 +10,41 @@
   overflow: hidden;
 }
 
-/* Glowing Lights from Left and Right */
+/* Animated Side Bars */
 .about::before,
 .about::after {
   content: "";
   position: absolute;
-  top: 50%;
-  width: 200px;
-  height: 200px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.6) 0%, transparent 70%);
-  border-radius: 50%;
+  top: 0;
+  width: 8px;
+  height: 100%;
+  background: linear-gradient(180deg, #f06292, #64b5f6, #fdd835, #81c784);
+  background-size: 400% 400%;
+  animation: gradientMove 8s ease infinite;
   z-index: 0;
-  pointer-events: none;
-  transform: translateY(-50%);
-  opacity: 0.6;
 }
 
 .about::before {
-  left: -200px;
-  animation: glowLeft 6s linear infinite;
+  left: 0;
 }
 
 .about::after {
-  right: -200px;
-  animation: glowRight 6s linear infinite;
+  right: 0;
 }
 
-@keyframes glowLeft {
+@keyframes gradientMove {
   0% {
-    left: -200px;
-    opacity: 0.2;
+    background-position: 0% 50%;
   }
   50% {
-    left: 50%;
-    opacity: 0.6;
+    background-position: 100% 50%;
   }
   100% {
-    left: 100%;
-    opacity: 0.1;
+    background-position: 0% 50%;
   }
 }
 
-@keyframes glowRight {
-  0% {
-    right: -200px;
-    opacity: 0.2;
-  }
-  50% {
-    right: 50%;
-    opacity: 0.6;
-  }
-  100% {
-    right: 100%;
-    opacity: 0.1;
-  }
-}
-
-/* Content above glow */
+/* Content stays above animation */
 .about > * {
   position: relative;
   z-index: 1;
@@ -107,7 +85,6 @@
 
   .about::before,
   .about::after {
-    width: 150px;
-    height: 150px;
+    width: 4px;
   }
 }
