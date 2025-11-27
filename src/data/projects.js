@@ -12,7 +12,7 @@ const projects = [
   {
     title: "Hospital management system",
     image: "/hospital.png",                         
-    link: "https://hospital-management-system-alpha-jet.vercel.app/",
+    link: "https://hospital-management-system-qxjc.vercel.app/",
   },
 ];
 
