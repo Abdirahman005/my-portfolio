@@ -75,3 +75,34 @@
     display: none;
   }
 }
+
+/* Make hamburger bigger and more visible */
+.hamburger {
+  display: flex; /* show on mobile */
+  flex-direction: column;
+  gap: 7px;           /* space between lines */
+  cursor: pointer;
+  padding: 12px;       /* clickable area */
+  margin-right: 10px;  /* distance from edge */
+}
+
+.hamburger div {
+  width: 35px;          /* wider lines */
+  height: 5px;          /* thicker lines */
+  background-color: white; /* contrast with navbar */
+  border-radius: 3px;    /* rounded edges */
+  transition: all 0.3s ease;
+}
+
+/* Optional hover effect */
+.hamburger:hover div {
+  background-color: #00bcd4; /* accent color */
+}
+
+/* Hide on desktop */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
+}
+
