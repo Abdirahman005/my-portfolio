@@ -1,3 +1,5 @@
+/* Navbar.css */
+
 .navbar {
   background-color: #333;
   color: #fff;
@@ -5,6 +7,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -16,4 +23,55 @@
 .nav-links a {
   color: white;
   text-decoration: none;
+  transition: color 0.2s;
+}
+
+.nav-links a:hover {
+  color: #00bcd4; /* hover color */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    top: 70px; /* adjust based on navbar height */
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    background-color: #333;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 0;
+    display: none; /* hidden by default */
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .navbar {
+    position: relative;
+  }
+
+  /* Hamburger menu button */
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    transition: all 0.3s ease;
+  }
+}
+
+/* Hide hamburger on desktop */
+@media (min-width: 769px) {
+  .hamburger {
+    display: none;
+  }
 }
