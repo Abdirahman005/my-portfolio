@@ -5,8 +5,8 @@ const projects = [
     link: "https://task-manager-indol-six.vercel.app/", 
   },
   {
-    title: "School registration system",
-    image: "/My School.png",              
+    title: "School management system",
+    image: "/school.png",              
     link: "https://school-learning-and-registration-sy.vercel.app/",
   },
   {
