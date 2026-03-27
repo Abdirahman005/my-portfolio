@@ -52,7 +52,7 @@ function Contact() {
         />
         <textarea
           name="message"
-          placeholder="Your Message"
+          placeholder="Hire a Software Engineer (React, Node.js, Flask)"
           rows="5"
           value={formData.message}
           onChange={handleChange}
